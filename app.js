@@ -26,6 +26,8 @@ addButton.addEventListener('click', (e)=>{
     </div>
     </div>`
     localStorage.setItem(`toDo-${taskNo}`, JSON.stringify([title.value, description.value]))
+    title.value = "";
+    description.value = "";
     var deleteBtn = document.querySelectorAll(".delete");
     console.log(taskNo);
     for(let i=0; i<deleteBtn.length; i++){
