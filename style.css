@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    background-color: beige;
+}
+button{
+    cursor: pointer;
+}
+input{
+    border: none;
+    border-radius: 20px;
+    background-color: aqua;
+    padding-left: 1.5rem;
+}
+.wrapper{
+    margin: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+}
+.inputContainer input{
+    width: 80rem;
+    min-height: 4rem;
+}
+.mainContainer #add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 2px);
+    font-size: 5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: brown;
+    margin: 5rem;
+    height: 5rem;
+    width: 5rem;
+}
+.mainContainer #add:hover{
+    background-color: rgb(132, 32, 32);
+}
+.mainContainer #add:active{
+    filter: none;
+    transform: scale(0.8);
+}
+.addedTask{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    width: 100rem;
+    flex-wrap: wrap;
+}
+.addedTask .noTask{
+    color: rgb(0, 76, 255);
+    margin-left: -15rem;
+    font-size: 3.5rem;
+}
+.addedTask .tasks{
+    margin: 2rem;
+    padding: 1rem;
+    overflow-x:scroll;
+    width: 28rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 15rem;
+    position: relative;
+    background-color: orange;
+    border-radius: 10px;
+    border: 2px dashed black;
+}
+.addedTask p{
+    font-size: 1.8rem;
+}
+.addedTask h2{
+    font-size: 3rem;
+}
+.addedTask .tasks .button{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+.addedTask button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 2rem;
+    width: 10rem;
+    height: 4rem;
+    border: 2px solid white;
+    border-radius: 10px;
+}
