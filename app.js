@@ -30,7 +30,7 @@ function fillFromLocal(){       //Function to fill-in previously added task on l
             for(let i=0; i<deleteBtn.length; i++){
                 deleteBtn[i].onclick = function(){
                     this.parentNode.parentNode.remove();
-                    localStorage.removeItem(`toDo-${taskNo}`, JSON.stringify([title.value, description.value]))
+                    localStorage.removeItem(`toDo-${i+1}`, JSON.stringify([title.value, description.value]))
                     taskNo--;
                     console.log(taskNo);
                     if(taskNo==0)
@@ -82,7 +82,7 @@ addButton.addEventListener('click', (e)=>{
     for(let i=0; i<deleteBtn.length; i++){
         deleteBtn[i].onclick = function(){
             this.parentNode.parentNode.remove();
-            localStorage.removeItem(`toDo-${taskNo}`, JSON.stringify([title.value, description.value]))
+            localStorage.removeItem(`toDo-${i+1}`, JSON.stringify([title.value, description.value]));
             taskNo--;
             console.log(taskNo);
             if(taskNo==0)
